@@ -1,0 +1,191 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.main {
+    margin-top: 2rem;
+    h1 {
+        font-weight: 600;
+        margin-top: 4rem;
+        border-bottom: solid 2px v.$gris;
+    }
+    &__grid {
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+        }
+
+        &__producto {
+            border: solid 1px v.$gris;
+            h3 {
+                text-align: center;
+                color: v.$blanco;
+                margin-bottom: 0;
+                font-size: 2.5rem;
+                background-color: v.$gris;
+            }
+            &__imagen {
+                overflow: hidden;
+                position: relative;
+                background-color: v.$blanco;
+                height: max-content;
+                
+                img {
+                    margin: 0 auto;
+                    transition: all .3s ease;
+                    
+                    &:hover {
+                        transform: scale(1.4);
+                        cursor: pointer;
+                    }   
+                }
+                a {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    &:hover {
+                        background-color: v.$rojo;
+                        color: v.$blanco;
+                        cursor: pointer;
+                    }
+                }
+                p {
+                    position: absolute;
+                    top: 10%;
+                    right: 0%;
+                    background-color: v.$rojo;
+                    padding: .6rem;
+                    font-size: 1.4rem;
+                    color: v.$blanco;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: v.$rojo;
+                        color: v.$blanco;
+                    }
+                }
+                   
+                
+            }
+            margin-bottom: 2rem;
+            
+            a {
+                text-align: center;
+            }
+        }
+    }
+}
+.section-cuchillo {
+    margin: 5rem 0;
+    background-image: url(/build/img/wall2.jpg);
+    background-position: center 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 50rem;
+
+    @include m.tablet {
+        background-position: center 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 7rem 0;
+    }
+
+    .cuchillos {
+        display: flex;
+        &__flex {
+            margin: 5rem 0;
+            max-width: 80rem;
+            margin: 0 auto;
+            &__texto {
+                text-shadow: 2px 2px 1px black;
+                align-items: center;
+                color: v.$beige;
+                text-align: center;
+                margin: 0 auto;
+                padding: 2rem;
+                p {
+                    color: v.$blanco;
+                }
+                a {
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+
+.popular {
+    margin-bottom: 4rem;
+    h2 {
+        font-weight: 600;
+        margin-top: 4rem;
+        border-bottom: solid 2px v.$gris;
+    }
+    &__grid {
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+        }
+
+        @include m.desktop {
+            @include m.grid(4, 3rem);
+        }
+
+        &__producto {
+            border: solid 1px v.$gris;
+            h3 {
+                text-align: center;
+                color: v.$blanco;
+                margin-bottom: 0;
+                font-size: 2.5rem;
+                background-color: v.$gris;
+            }
+            &__imagen {
+                overflow: hidden;
+                position: relative;
+                
+                img {
+                    margin: 0 auto;
+                    transition: all .3s ease;
+                    z-index: 2;
+                    
+                    &:hover {
+                        transform: scale(1.4);
+                        cursor: pointer;
+                    }   
+                }
+                a {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    &:hover {
+                        background-color: v.$rojo;
+                        color: v.$blanco;
+                        cursor: pointer;
+                    }
+                }
+                p {
+                    position: absolute;
+                    top: 10%;
+                    right: 0%;
+                    background-color: v.$rojo;
+                    padding: .6rem;
+                    font-size: 1.4rem;
+                    color: v.$blanco;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: v.$rojo;
+                        color: v.$blanco;
+                    }
+                }
+                   
+                
+            }
+            margin-bottom: 2rem;
+            
+            a {
+                text-align: center;
+            }
+        }
+    }
+}

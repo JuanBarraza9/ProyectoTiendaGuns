@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.precio {
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border-top: solid 1px v.$gris;
+    .moneda {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .valor {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    .centavos {
+        position: absolute;
+        top: .3rem;
+        margin: 0;
+    }
+}

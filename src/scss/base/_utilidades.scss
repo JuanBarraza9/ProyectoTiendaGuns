@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: v.$celeste;
+}
+
+.title-bg {
+    background-color: v.$blanco;
+    width: 100%;
+    color: v.$naranja;
+    display: block;
+}

@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: v.$gris;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: v.$blanco;
+    border-top: solid 1px v.$gris;
+
+    &:hover {
+        background-color: lightgrey;
+        color: v.$negro;
+    }
+}
+
+.boton-int {
+    display: block;
+    align-items: center;
+    max-width: 15rem;
+    border-top-right-radius: 1rem;
+    background-color: v.$gris;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: v.$blanco;
+}
+
+.boton-home {
+    display: inline-block;
+    align-items: center;
+    max-width: 20rem;
+    border-radius: 1rem;
+    background-color: v.$rojo;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: v.$blanco;
+    &:hover {
+        background-color: v.$blanco;
+        color: v.$negro;
+    }
+}
