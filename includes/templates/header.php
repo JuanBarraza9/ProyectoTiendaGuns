@@ -24,6 +24,7 @@
             </div>
             
             <div class="enlaces">
+                <a href="/index.php">Inicio</a>
                 <a href="#">Cuenta</a>
                 <a href="#">Ofertas</a>
                 <a href="#">Contacto</a>

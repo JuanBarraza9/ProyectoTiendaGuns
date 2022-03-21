@@ -101,33 +101,9 @@ btnCerrarMenu.addEventListener('click', (e) => {
         elemento.classList.remove('activo');
     });
     // es necesario poner el visible porque, sino al cerrar al menu no se puede hacer scroll
-    document.querySelector('body').style.overflow = 'visible';
-    document.querySelector('body').style.overflowX = 'hidden'; 
+    document.querySelector('body').style.overflow = 'visible'; 
 });
 
 
 // Slider
 
-const grande = document.querySelector('.grande');
-const punto = document.querySelectorAll('.punto');
-
-// Asignar los click
-punto.forEach( ( cadaPunto , i ) => {
-    document.querySelector('body').style.overflowX = 'hidden';
-    punto[i].addEventListener('click', ()=> {
-        let posicion = i
-        // posicion es 0 el transformX es 0
-        // posicion es 1 el transformX es -50%
-        // opreacion = posicion * -50
-        let operacion = posicion * -100/3
-        
-        grande.style.transform = `translateX(${ operacion }%)`
-
-        punto.forEach( ( cadaPunto , i )=>{
-            punto[i].classList.remove('activo');
-        })
-        
-        punto[i].classList.add('activo');
-        
-    });
-});

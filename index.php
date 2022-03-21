@@ -1,19 +1,12 @@
 <?php 
-    $inicio = true;
     include 'includes/templates/header.php' 
     ?>
 
-    <div class="carrousel">
-        <div class="grande">
-            <img class="img1" src="/build/img/slider.jpg" alt="imagen">
-            <img class="img2" src="/build/img/slider2.jpg" alt="imagen">
-            <img class="img3" src="/build/img/slider3.jpg" alt="imagen">
-        </div>
-
-        <ul class="puntos">
-            <li class="punto activo"></li>
-            <li class="punto"></li>
-            <li class="punto"></li>
+    <div class="slider">
+        <ul>
+            <li><img src="/build/img/slider.jpg" alt="img"></li>
+            <li><img src="/build/img/slider2.jpg" alt="img"></li>
+            <li><img src="/build/img/slider3.jpg" alt="img"></li>
         </ul>
     </div>
 
@@ -25,10 +18,8 @@
                 <h3>Glock 17</h3>
                 <div class="main__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guns/producto4-Glock 17.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <img loading="lazy" src="/build/img/guns/producto4 - Glock 17.jpg" alt="Glock 17">
+                        <a href="producto.php" href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -43,7 +34,7 @@
                 <div class="main__grid__producto__imagen">
                     <picture class="">
                         <img loading="lazy" src="/build/img/guns/producto1.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -57,10 +48,8 @@
             <h3>ISSC MSR MK22</h3>
                 <div class="main__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/producto2.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -92,10 +81,8 @@
                 <h3>MSR MK22</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/producto3.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -110,10 +97,8 @@
                 <h3>BROWNING BL-22</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/producto5.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -127,10 +112,8 @@
                 <h3>STOEGER STR-9</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/stoeger-str-9.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -144,10 +127,8 @@
                 <h3>M&P 15-22</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/CARABINAS SMITH&WESSON M&P15-22.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                     </picture>
                 </div>
                 <div class="precio">
@@ -160,10 +141,8 @@
                 <h3>AITOR JUNGLE</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/aitor-jungle-king-iii.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                     </picture>
                 </div>
                 <div class="precio">
@@ -176,10 +155,8 @@
                 <h3>FABARM MART</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/fabarm-martial-ultrashort.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -193,10 +170,8 @@
                 <h3>REMINGTON 45</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/remington-45acp-jacketed-hollow-point-230gr.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                         <p class="oferta">OFERTA</p>
                     </picture>
                 </div>
@@ -210,10 +185,8 @@
                 <h3>WINCHESTER</h3>
                 <div class="popular__grid__producto__imagen">
                     <picture class="">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp.avif" type="image/avif">
-                        <source srcset="build/img/guns/producto4 - Glock 17.webp" type="image/webp">
                         <img loading="lazy" src="/build/img/guns/winchester-sxp-defender.jpg" alt="Glock 17">
-                        <a class="boton-int">VER PRODUCTO</a>
+                        <a href="producto.php" class="boton-int">VER PRODUCTO</a>
                     </picture>
                 </div>
                 <div class="precio">
