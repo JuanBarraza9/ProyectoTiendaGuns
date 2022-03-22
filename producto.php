@@ -5,7 +5,14 @@
 <main class="contenedor main-producto">
     <div class="grid-producto">
         <div class="grid-img">
-            
+            <div class="img-container">
+                <img id="imageBox" src="/build/img/guns/producto4 - Glock 17.jpg" alt="image">
+            </div>
+            <div class="product-small-img">
+                <img class="center" src="/build/img/guns/producto4 - Glock 17.jpg" alt="image" onclick="imagenZoom(this)">
+                <img class="center" src="/build/img/guns/producto4 - Glock 17-1.jpg" alt="image" onclick="imagenZoom(this)">
+                <img class="center" src="/build/img/guns/producto4 - Glock 17-2.jpg" alt="image" onclick="imagenZoom(this)">
+            </div>
         </div>
         <div class="informacion-producto">
             <h2>Glock 17 - 9 MM Gen7</h2>

@@ -1,195 +1,76 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-// @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.footer {
+  background-color: v.$azulAmz;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 2rem 0;
 
+  .footer-padre {
+    ul {
+      margin: 0;
+    }
+    li {
+      list-style: none;
+      color: v.$blanco;  
+    }
+    p {
+      margin: 0;
+      color: v.$blanco;
+      font-size: 1.8rem;
+    }
 
-.h4 {
-  color: v.$naranja;
-}
+    h4 {
+      color: v.$naranja;
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px black;
+    }
 
-.content1{
-//   position: relative;
-  margin: 130px auto;
-  text-align: center;
-  padding: 0 20px;
-}
-.content1 .text{
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: v.$naranja;
-}
-.content1 .p{
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: v.$blanco;
-}
-footer{
-//   position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background: v.$azulAmz;
-  color: v.$blanco;
-}
-.main-content{
-  display: flex;
-}
-.main-content .box{
-  flex-basis: 50%;
-  padding: 10px 20px;
-}
-.box h4{
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.box .content{
-  margin: 20px 0 0 0;
-  position: relative;
-}
-.box .content:before{
-  position: absolute;
-  content: '';
-  top: -10px;
-  height: 2px;
-  width: 100%;
-  background: #1a1a1a;
-}
-.box .content:after{
-  position: absolute;
-  content: '';
-  height: 2px;
-  width: 15%;
-  background: v.$naranja;
-  top: -10px;
-}
-.left .content p {
-  text-align: justify;
-  color: v.$blanco;
-  font-size: 1.7rem;
-  line-height: 1;
-}
-.left .content .social{
-  margin: 20px 0 0 0;
-}
-.left .content .social a{
-  padding: 0 2px;
-}
-.left .content .social a span{
-  height: 40px;
-  width: 40px;
-  background: v.$blanco;
-  line-height: 40px;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: 0.3s;
-  color: v.$gris;
-}
-.left .content .social a span:hover{
-  background: v.$naranja;
-}
-.center .content .fas{
-  font-size: 1.4375rem;
-  background: #1a1a1a;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.center .content .fas:hover{
-  background: v.$naranja;
-}
-.center .content .text{
-  font-size: 1.6rem;
-  font-weight: 500;
-  padding-left: 10px;
-}
-.center .content .phone{
-  margin: 15px 0;
-}
-.right form .text{
-  font-size: 1.0625rem;
-  margin-bottom: 2px;
-  color: v.$blanco;
-}
-.right form .msg{
-  margin-top: 10px;
-}
-.right form input, .right form textarea{
-  width: 100%;
-  font-size: 1.5rem;
-  background: v.$blanco;
-  padding-left: 10px;
-  border: 1px solid v.$gris;
-}
-.right form input:focus,
-.right form textarea:focus{
-  outline-color: #3498db;
-}
-.right form input{
-  height: 35px;
-}
-.right form .btn{
-  margin-top: 10px;
-}
-.right form .btn button{
-  height: 40px;
-  width: 50%;
-  border: none;
-  outline: none;
-  color: v.$blanco;
-  background: v.$naranja;
-  font-size: 1.6rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: ease .1s all;
-  display: block;
-  margin: 0 auto;
-  border-radius: 1rem;
-}
-.right form .btn button:hover{
-  background: #dc842d;
-}
-.bottom center{
-  padding: 5px;
-  font-size: 1.3rem;
-  background: #151515;
-}
-.bottom center span{
-  color: v.$blanco;
-}
-.bottom center a{
-  color: v.$naranja;
-  text-decoration: none;
-}
-.bottom center a:hover{
-  text-decoration: underline;
-}
-@media screen and (max-width: 900px) {
-  footer{
-    position: relative;
-    bottom: 0px;
+    .footer-grid {
+      @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+      .caja {
+        box-shadow: 2px 2px 2px black;
+        text-align: center;
+        background-color: v.$azul;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        h4 {
+          margin: 1rem 0;
+        }
+        img {
+          width: 15rem;
+          align-items: center;  
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .presentacion-footer {
+        
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .redes-sociales {
+            background-color: v.$azul;
+            border-radius: 2rem;
+            padding: 1rem;
+            margin: 2rem;
+        }
+        .nosotros {
+            background-color: v.$azul;
+            border-radius: 2rem;
+            padding: 1rem;
+            margin: 2rem;
+        }
+    }
   }
-  .main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .main-content .box{
-    margin: 5px 0;
-  }
-}
-
-
-/*****Eliminar border por defecto de un botton */
-input{
-  border: none;
-  outline: none;
-  }
-textarea{
-outline: none;
-outline:none;
 }

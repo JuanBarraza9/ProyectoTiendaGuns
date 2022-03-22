@@ -105,5 +105,10 @@ btnCerrarMenu.addEventListener('click', (e) => {
 });
 
 
-// Slider
+// imagenes producto
+
+function imagenZoom(smallImg) {
+    let fullImg=document.getElementById("imageBox");
+    fullImg.src=smallImg.src;
+}
 

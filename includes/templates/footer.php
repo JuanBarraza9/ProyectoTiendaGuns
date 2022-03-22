@@ -1,61 +1,41 @@
-    <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h4 class="h4">Nosotros</h4>
-          <div class="content">
-            <p>Integer in egestas tellus, quis placerat erat. Etiam ornare ligula in laoreet varius. In et facilisis odio. Donec tincidunt scelerisque massa. Nunc scelerisque leo turpis, at convallis dui eleifend ut.</p>
-            <div class="social">
-              <a target="_blank" href="#"><span class="fab fa-facebook-f"></span></a>
-              <a target="_blank" href="#"><span class="fab fa-twitter"></span></a>
-              <a target="_blank" href="#"><span class="fab fa-instagram"></span></a>
-              <a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
-            </div><!-- Social -->
-          </div><!-- content -->
-        </div><!-- box -->
+    <footer class="footer">
+      <div class="contenedor footer-padre">
+        <div class="footer-grid">
+            <div class="caja forma-pago-footer">
+              <img src="/build/img/tarjeta.png" alt="img">
+              <h4>Elige como pagar.</h4>
+              <p>Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
+              
+            </div>
+            <div class="caja envio-gratis-footer">
+              <img src="/build/img/free.png" alt="img">
+              <h4>Envío gratis a todo el país</h4>
+              <p>Solo por estar registrado, tenés envíos gratis en todos los productos.</p>
+            </div>
+            <div class="caja seguridad-footer">
+              <img src="/build/img/security.png" alt="img">
+              <h4>Seguridad, de principio a fin</h4>
+              <p>¿No te gusta? ¡Devolvelo!, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+            </div>
+        </div><!--GRID-->
 
-        <div class="center box">
-          <h4 class="h4">Ubicación</h4>
-          <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Provincia de Bs As</span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text">+54 11-01010101</span>
-            </div>
-            <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">Juan@Correo.com</span>
-            </div>
+        <div class="presentacion-footer">
+          <div class="redes-sociales">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <div class="nosotros">
+            <ul>
+              <li><i class="fa-solid fa-map-location"></i> Encuentranos en: <p>Buenos Aires - Argentina</p></li>
+              <li><i class="fa-solid fa-envelope"></i> Nuestro email: <p>email@email.com</p></li>
+              <li><i class="fa-solid fa-phone-rotary"></i> Contacto: <p>11-01010101</p></li>
+            </ul>
           </div>
         </div>
-
-        <div class="right box">
-          <h4 class="h4">Contacto</h4>
-          <div class="content">
-            <form action="#">
-              <div class="email">
-                <div class="text">Email *</div>
-                <input type="email" required>
-              </div>
-              <div class="msg">
-                <div class="text">Mensaje *</div>
-                <textarea rows="2" cols="25" required></textarea>
-              </div>
-              <div class="btn">
-                <button type="submit">Enviar Mensaje</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="bottom">
-        <center>
-          <span class="credit">Desarrollado por 
-            <a target="_blank" href="#">Juan Barraza</a> | </span>
-          <span class="far fa-copyright"></span><span> 2021.</span>
-        </center>
       </div>
     </footer>
     
